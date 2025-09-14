@@ -55,3 +55,7 @@ h1 {
   z-index: 9999; /* stays on top */
   pointer-events: all; /* block clicks */
 }
+
+a {
+  text-decoration: none;
+}

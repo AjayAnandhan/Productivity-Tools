@@ -72,6 +72,7 @@ function QRCodeGenerator() {
           type="text"
           onChange={(e) => handleChange(e)}
           required
+          onFocus={(e) => e.target.select()}
         />
         <label className="inputLabel" htmlFor="size">
           Image size `(e.g., 150)`
@@ -102,6 +103,16 @@ function QRCodeGenerator() {
           </Button>
         </Stack>
       </div>
+      <p>
+        Created by{" "}
+        <a
+          href="https://github.com/AjayAnandhan/QRCode-Generator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ajay
+        </a>
+      </p>
       {isLoading && (
         <Box sx={{ display: "flex", position: "absolute" }} className="overlay">
           <CircularProgress />
