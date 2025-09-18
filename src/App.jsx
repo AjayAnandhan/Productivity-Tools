@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "@/Components/home-page";
-import TimesheetCalculator from "./components/TimeCard";
-import QRCodeGenerator from "./components/QRCodeGenerator";
+import TimesheetCalculator from "./Components/TimeCard";
+import QRCodeGenerator from "./Components/QRCodeGenerator";
 import Navigation from "./Components/navigation";
 
 export default function App() {
